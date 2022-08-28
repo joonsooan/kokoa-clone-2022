@@ -1,3 +1,4 @@
 # Kokoa Clone 2022 Update
 
-first commit!
+First commit!
+Adding text
