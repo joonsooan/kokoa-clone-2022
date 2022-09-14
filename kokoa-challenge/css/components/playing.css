@@ -4,22 +4,27 @@
 }
 
 .playing__image-box {
+  color: white;
   background-color: #ffb413;
   display: flex;
   justify-content: center;
   align-items: center;
   float: left;
-  width: 150px;
-  height: 150px;
-  border: 1px solid;
+  width: 130px;
+  height: 130px;
+  border: 2px solid black;
   border-radius: 20%;
 }
 
 .playing__title {
-  margin-left: 10px;
   float: left;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 15px;
 }
 
 .playing__artist {
-  float: right;
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 20px;
 }
