@@ -1,0 +1,30 @@
+.playlist {
+  margin: 0px;
+}
+
+.playlist__album {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 20%;
+  float: left;
+}
+
+.playlist__title {
+}
+
+.Matargasti {
+  background-color: tomato;
+}
+
+.Attitude {
+  background-color: #ff7eb3;
+}
+
+.Try-everything {
+  background-color: #163fe1;
+}
+
+.Sunflower {
+  background-color: #02bfa3;
+}
