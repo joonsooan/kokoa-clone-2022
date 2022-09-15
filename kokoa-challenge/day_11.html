@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="day_11.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,36 +9,44 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <i class="fa-solid fa-bars"></i>
-        <span>game store</span>
+      <header class="nav-bar">
+        <i class="fa-solid fa-bars fa-lg"></i>
+        <h4 class="nav-bar__title">Game Store</h4>
         <i class="fa-solid fa-sack-dollar"></i>
       </header>
-      <search class="wrapper__search-bar">
-        <span>Search Games</span>
-        <i class="fa-solid fa-magnifying-glass"></i>
+
+      <search class="search-bar">
+        <h5 class="search-bar__text">Search Games</h5>
+        <i class="fa-solid fa-magnifying-glass search-bar__glass"></i>
       </search>
+
       <main>
-        <div class="Game-of-the-day">
-          <h2 class="Game-of-the-day__header">Game of the day</h2>
-          <div class="Game-of-the-day__cover">
-            <img src="https://images.eshop-prices.com/games/271/480w.jpeg" />
+        <h3 class="Gotd-title">Game of the day</h3>
+        <div class="Gotd">
+          <div>
+            <img
+              class="Gotd__cover"
+              src="https://m.media-amazon.com/images/I/91SF0Tzmv4L._SY445_.jpg"
+              height="180"
+            />
           </div>
-          <h4 class="Game-of-the-day__title">Super Mario Odyssey</h4>
-          <h5 class="Game-of-the-day__info">Nintendo</h5>
-          <div class="Game-of-the-day__rating">
-            <i class="fa-solid fa-star full_star"></i>
-            <i class="fa-solid fa-star full_star"></i>
-            <i class="fa-solid fa-star full_star"></i>
-            <i class="fa-solid fa-star full_star"></i>
-            <i class="fa-solid fa-star empty_star"></i>
+          <div class="Gotd__content-box Gotd__text">
+            <h4 class="Gotd__text Gotd__game-title">Super Mario Odyssey</h4>
+            <h6 class="Gotd__text Gotd__game-info">Nintendo</h6>
+            <div class="Gotd__text Gotd__game-rating">
+              <i class="Gotd__text fa-solid fa-star fa-2xs full_star"></i>
+              <i class="Gotd__text fa-solid fa-star fa-2xs full_star"></i>
+              <i class="Gotd__text fa-solid fa-star fa-2xs full_star"></i>
+              <i class="Gotd__text fa-solid fa-star fa-2xs full_star"></i>
+              <i class="Gotd__text fa-solid fa-star fa-2xs empty_star"></i>
+            </div>
+            <h6 class="Gotd__text Gotd__btn">Summary</h6>
+            <h6 class="Gotd__text Gotd__btn">Awards</h6>
+            <div class="Gotd__text Gotd__bookmark">
+              <i class="fa-solid fa-bookmark fa-xs"></i>
+            </div>
+            <h6 class="Gotd__text Gotd__buy">Buy Now!</h6>
           </div>
-          <h5 class="Game-of-the-day__btn">Summary</h5>
-          <h5 class="Game-of-the-day__btn">Awards</h5>
-          <div class="Game-of-the-day__bookmark">
-            <i class="fa-solid fa-bookmark"></i>
-          </div>
-          <h5 class="Game-of-the-day__buy">Buy Now!</h5>
         </div>
 
         <div class="Top-Titles"></div>
@@ -45,6 +54,7 @@
         <div class="Popular-companies"></div>
       </main>
     </div>
+
     <script
       src="https://kit.fontawesome.com/c93df6e3a9.js"
       crossorigin="anonymous"
