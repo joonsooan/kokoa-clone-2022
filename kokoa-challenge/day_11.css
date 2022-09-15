@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ba7fd4;
+  background-color: #ffa940;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -53,14 +53,15 @@ main {
   padding: 20px 15px 0px 15px;
 }
 
+.title {
+  margin: 0px;
+  margin-left: 8px;
+}
+
 .Gotd {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.Gotd-title {
-  margin: 15px 0px 15px 0px;
 }
 
 .Gotd__cover {
@@ -83,7 +84,7 @@ main {
 
 .Gotd__game-info {
   margin-bottom: 3px;
-  color: #d9d8d9;
+  color: #bdbdbd;
 }
 
 .Gotd__game-rating {
@@ -94,8 +95,12 @@ main {
   color: #ffc72d;
 }
 
+.half_star {
+  color: #ffc72d;
+}
+
 .empty_star {
-  color: #eaeaea;
+  color: #ececec;
 }
 
 .Gotd__btn {
@@ -110,6 +115,7 @@ main {
   border-radius: 5px;
   background-color: #f6f6f6;
   color: #4d4d4d;
+  box-shadow: 3px 3px 6px -3px #bdbdbd;
 }
 
 .Gotd__bookmark {
@@ -122,6 +128,7 @@ main {
   background-color: #ffc72d;
   border-radius: 50%;
   margin-right: 50px;
+  box-shadow: 3px 3px 6px -3px #bdbdbd;
 }
 
 .Gotd__buy {
@@ -134,4 +141,87 @@ main {
   background-color: #353535;
   color: white;
   border-radius: 5px;
+  box-shadow: 3px 3px 6px -3px #797979;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+}
+
+.TG {
+  width: 345px;
+  overflow-x: scroll;
+}
+
+.TG-list {
+  display: flex;
+  float: left;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.TG-list__game {
+  width: 100px;
+  margin-right: 15px;
+}
+
+.TG-list__content {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TG-list__cover {
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.TG-list__rating {
+  margin-top: -5px;
+}
+
+.Pop {
+  margin-bottom: 20px;
+}
+
+.Pop-text1 {
+  margin-top: 5px;
+  color: #3e3e3e;
+}
+
+.Pop-text2 {
+  color: #bdbdbd;
+  word-wrap: break-word;
+  margin-top: 5px;
+}
+
+.Pop-text3 {
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.long-btn {
+  width: 100px;
+}
+
+.Main-title {
+  margin: 20px 0px 5px 0px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.trophy-icon {
+  color: #ffc72d;
+}
+
+.fire-icon {
+  color: #fa4d0a;
+}
+
+.user-icon {
+  color: #f3b9a3;
 }
