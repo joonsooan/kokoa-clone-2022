@@ -1,29 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="day_12.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
-    <div class="screen">
-      <div class="screen__nav-bar">
-        <i class="fa-solid fa-arrow-left"></i>
+    <div class="flex-column-align_center screen">
+      <div class="flex-justify-center screen__nav-bar">
+        <i class="nav-bar__icon fa-solid fa-arrow-left"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-      <div class="screen__now-playing">
-        <div></div>
+
+      <div class="flex-column-align_center screen__now-playing">
+        <div class="flex-justify_align-center now-playing">
+          <img
+            class="flex-justify_align-center now-playing now-playing__image"
+            src="https://i.scdn.co/image/ab67616d0000b2730884a5ab3882152b208f506c"
+          />
+        </div>
+        <h2 class="flex-justify_align-center now-playing now-playing__artist">
+          One Republic
+        </h2>
+        <h6 class="flex-justify_align-center now-playing now-playing__genre">
+          Pop music, Rock music, Pop rock
+        </h6>
+        <div class="flex-justify_align-center btns">
+          <h6
+            class="flex-justify_align-center btns now-playing now-playing__btns"
+          >
+            Shuffle
+          </h6>
+          <div
+            class="flex-justify_align-center btns now-playing now-playing__btns white-btn"
+          >
+            <i class="dark_color fa-solid fa-heart heart fa-sm"></i>
+            <h6 class="white-btn__text">8,141,669</h6>
+          </div>
+        </div>
       </div>
-      <div class="screen__playlist"></div>
-      <div class="screen__playbar"></div>
+
+      <div class="flex-column-align_center screen__playlist">
+        <div class="flex-align-center playlist-song">
+          <div class="playlist-song__image-box">
+            <img
+              class="playlist-song__image"
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220914_244%2F1663143539788eRx9n_JPEG%2F64279373606276138_1303665489.jpg&type=sc960_832"
+              height="30px"
+            />
+          </div>
+          <div class="playlist-song__text-box">
+            <h6 class="playlist-song__artist">The 1975</h6>
+            <h5 class="playlist-song__title">Sincerity is scary</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-sm dark_color"></i>
+        </div>
+
+        <div class="flex-align-center playlist-song selected-song">
+          <div class="playlist-song__image-box selected-image-box">
+            <img
+              class="playlist-song__image"
+              src="https://i.scdn.co/image/ab67616d0000b2730884a5ab3882152b208f506c"
+              height="30px"
+            />
+            <div class="flex-justify_align-center selected-image">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+          </div>
+          <div class="playlist-song__text-box">
+            <h6 class="playlist-song__artist">One Republic</h6>
+            <h5 class="playlist-song__title">I Ain't Worried</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-sm dark_color"></i>
+        </div>
+
+        <div class="flex-align-center playlist-song">
+          <div class="playlist-song__image-box">
+            <img
+              class="playlist-song__image"
+              src="https://charts-static.billboard.com/img/2021/07/the-kid-laroi-qev-stay-ens-180x180.jpg"
+              height="30px"
+            />
+          </div>
+          <div class="playlist-song__text-box">
+            <h6 class="playlist-song__artist">The Kid LAROI & Justin Bieber</h6>
+            <h5 class="playlist-song__title">Stay</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-sm dark_color"></i>
+        </div>
+
+        <div class="flex-align-center playlist-song">
+          <div class="playlist-song__image-box">
+            <img
+              class="playlist-song__image"
+              src="https://s3.amazonaws.com/filepicker-images-rapgenius/lHwE8sh5TnaGbjmiojLb_ES_Divide_Final_Layered_Artwork%20(1).jpg"
+              height="30px"
+            />
+          </div>
+          <div class="playlist-song__text-box">
+            <h6 class="playlist-song__artist">Ed Sheeran</h6>
+            <h5 class="playlist-song__title">Perfect</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical fa-sm dark_color"></i>
+        </div>
+      </div>
+
+      <div class="flex-align-center screen__playbar">
+        <div class="flex-column playbar-text">
+          <h6 class="playbar-text__artist">One Republic</h6>
+          <h5 class="playbar-text__title">I Ain't Worried</h5>
+        </div>
+        <div class="playbar__icon-box">
+          <i class="playbar__icon fa-solid fa-backward-step fa-xs"></i>
+          <i class="playbar__icon fa-solid fa-pause"></i>
+          <i class="playbar__icon fa-solid fa-forward-step fa-xs"></i>
+        </div>
+      </div>
     </div>
-    <div class="screen">
-      <div></div>
-      <play-box></play-box>
-      <progress-bar></progress-bar>
-      <play-btns></play-btns>
+
+    <div class="flex-column-align_center screen">
+      <div class="flex-justify-center screen__nav-bar">
+        <i class="nav-bar__icon fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+
+      <div class="play-box">
+        <div class="play-box__cover">
+          <img
+            class="play-box__image"
+            src="https://i.scdn.co/image/ab67616d0000b2730884a5ab3882152b208f506c"
+            width="200"
+          />
+        </div>
+        <div class="flex-column-align_center play-box__text play-box__text-box">
+          <h2 class="flex-column-align_center play-box__text play-box__title">
+            I Ain't Worried
+          </h2>
+          <h6 class="flex-column-align_center play-box__text play-box__artist">
+            One Republic
+          </h6>
+        </div>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-bar__time">
+          <div class="progress-bar__played-time"></div>
+          <div class="progress-bar__left-time"></div>
+        </div>
+
+        <div class="progress-bar__bar">
+          <div class="bar__played-bar"></div>
+          <div class="bar__current-dot"></div>
+          <div class="bar__left-bar"></div>
+        </div>
+      </div>
+
+      <div class="play-btns"></div>
     </div>
 
     <script
