@@ -249,7 +249,7 @@ selected-image
 
 .play-box {
   width: 200px;
-  height: 300px;
+  height: 290px;
   margin-top: 40px;
 }
 
@@ -266,9 +266,8 @@ selected-image
 
 .play-box__text-box {
   width: 200px;
-  height: 60px;
-  margin-top: 40px;
-  background-color: cornflowerblue;
+  height: 50px;
+  margin-top: 35px;
 }
 
 .play-box__title {
@@ -279,27 +278,61 @@ selected-image
 }
 
 .play-box__artist {
-  color: var(--grey_color);
+  color: var(--light-grey_color);
   font-weight: 800;
   width: 200px;
-  height: 30px;
+  height: 20px;
 }
 
-.progress {
-}
 .progress-bar {
   width: 240px;
-  height: 50px;
+  height: 40px;
   margin-top: 10px;
-  background-color: blanchedalmond;
 }
 
 .progress-bar__time {
-  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.progress-bar__played-time {
+  color: var(--light-grey_color);
+  width: fit-content;
+  height: 20px;
+  margin-left: 2px;
+}
+
+.progress-bar__left-time {
+  color: var(--light-grey_color);
+  width: fit-content;
+  height: 20px;
+  margin-right: 2px;
 }
 
 .progress-bar__bar {
-  height: 25px;
+  margin: 2px 0px 12px 0px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #e6e4e9;
+  position: relative;
+}
+
+.bar__played-bar {
+  width: 144px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--dark_color);
+}
+
+.bar__current-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  background-color: var(--dark_color);
+  position: absolute;
+  top: -2px;
+  left: 142px;
 }
 
 .play-btns {
