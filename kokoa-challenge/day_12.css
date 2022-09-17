@@ -9,7 +9,7 @@ body {
   --dark_color: #1f1f1f;
   --grey_color: #807f81;
   --light-grey_color: #aaa9ab;
-  --ocean_color: #3e7a82;
+  --purple_color: #c470ac;
 }
 
 h1,
@@ -74,7 +74,7 @@ selected-image
 .screen {
   background-color: white;
   width: 300px;
-  height: 600px;
+  height: 590px;
   border-radius: 30px;
   margin: 50px;
   box-shadow: 10px 10px 10px -10px #abaaac;
@@ -102,7 +102,7 @@ selected-image
   height: 80px;
   border-radius: 40px;
   margin-bottom: 20px;
-  box-shadow: 2px 2px 5px var(--ocean_color);
+  box-shadow: 2px 2px 5px var(--purple_color);
 }
 
 .now-playing__artist {
@@ -200,6 +200,10 @@ selected-image
 
 .dark_color {
   color: var(--dark_color);
+}
+
+.grey_color {
+  color: var(--grey_color);
 }
 
 .playlist-song__artist {
@@ -336,8 +340,25 @@ selected-image
 }
 
 .play-btns {
-  width: 240px;
+  justify-content: space-between;
+  width: 220px;
   height: 60px;
   margin-top: 30px;
-  background-color: blanchedalmond;
+}
+
+.play-icon__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px var(--grey_color);
+  background-color: var(--dark_color);
+  color: white;
+}
+
+.play-icon__icon {
+  margin-left: 2px;
+}
+
+.play-icon__arrow {
+  color: var(--light-grey_color);
 }
